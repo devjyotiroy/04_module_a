@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesible Modal & overlay</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            background: fixed;
+            background-size: auto;
+            align-items: center;
+            text-align: center;
+        }
+        .btn {
+            text-align: center;
+            text-shadow: black;
+            align-items: center;
+            margin-top: 20%;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <button id="btn">Open modal</button>
+    
+        <!-- <h1>Example Modal</h1>
+        <p>This is a demonstration of an accessible modal window.</p> -->
+    </main>
+    <script>
+        const btn = document.getElementById(btn);
+        btn.addEventListener("Click", function(){
+            alert('This is a demonstration of an accessible modal window.')
+        })
+    </script>
+  </body>
+</html>

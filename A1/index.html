@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Rings</title>
+    <style>
+        body {
+            background-attachment: fixed;
+            background: fixed;
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-wrap: wrap;
+            user-select: none;
+        }
+        h1{
+            text-align: left;
+        }
+        .container {
+            background-position: 10px;
+            box-sizing: border-box;
+            gap: 20px;
+            border-radius: 100%;
+        }
+        .card {
+            width: 100px;
+            height: 120px;
+            margin: 8px;
+            position: fixed;
+            text-align: center;
+            text-decoration: beige;
+            border: 5vh;
+            gap: 20px;
+            transform: none;
+            border-radius: 100%;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .card:hover {
+            box-shadow: black;
+            text-shadow:aqua;
+            transform:translate(0.4, 0.8, 1);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Status Rings</h1>
+    <h3>Visual indicators for task progress states.</h3>
+        <div class="container" alt="container">
+            <div class="card" id="card">Pending</div>
+        </div>
+</body>
+</html>
